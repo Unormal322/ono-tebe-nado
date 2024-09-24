@@ -305,7 +305,7 @@
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr 150px 1fr;
+    grid-template-columns: 1fr 170px 1fr;
     justify-items: start;
     align-items: start;
     width: 100%;
@@ -325,6 +325,10 @@
     justify-self: center;
     text-align: center;
     list-style-type: none;
+}
+
+.footer__menu {
+    justify-self: center;
 }
 
 .footer__menu-link {
