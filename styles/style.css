@@ -1,6 +1,6 @@
 .header {
     display: grid;
-    grid-template-columns: 1fr 148px 1fr;  
+    grid-template-columns: 1fr 148px 1fr;
     padding: 92px 49.48px 96px 50.52px;
     justify-items: start;
     align-items: center;
@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     place-items: center;
-    column-gap: 32px;    
+    column-gap: 32px;
     width: 391.48px;
     height: 22px;
 }
@@ -86,7 +86,7 @@
     color: #fff;
     font-size: 100px;
     font-weight: 700;
-    letter-spacing: 0.3em; 
+    letter-spacing: 0.3em;
     line-height: 115%;
     text-transform: uppercase;
     padding: 165px 50px 135px;
@@ -201,7 +201,7 @@
     max-width: 254px;
 }
 
-.card__text {    
+.card__text {
     font-size: 20px;
     font-weight: 400;
     line-height: 120%;
@@ -216,7 +216,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 0;    
+    z-index: 0;
 }
 
 .card_type_book {
@@ -253,7 +253,7 @@
 
 .about {
     display: grid;
-    grid-template-columns: 334px 1fr;    
+    grid-template-columns: 334px 1fr;
     grid-template-rows: 275px 320px;
     width: 100%;
     max-width: 1100px;
@@ -299,13 +299,13 @@
 }
 
 .about-text-first {
-    padding-bottom: 24px; 
+    padding-bottom: 24px;
     max-width: 688px;
 }
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr 149px 1fr;    
+    grid-template-columns: 1fr 149px 1fr;
     justify-items: start;
     align-items: start;
     width: 100%;
