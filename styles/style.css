@@ -1,13 +1,13 @@
 .header {
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
-    padding: 92px 49.48px 96px 50.52px;
+    grid-template-rows: 1fr;
+    padding: 92px 50px;
     justify-items: start;
     align-items: center;
     width: 100%;
     max-width: 1100px;
     height: 100%;
-    max-height: 293px;
     font-size: 18px;
 }
 
@@ -17,7 +17,6 @@
     place-items: center;
     column-gap: 25px;
     width: 391.48px;
-    height: 22px;
 }
 
 .header__links-list-item {
@@ -29,17 +28,22 @@
 }
 
 .header__link {
-    text-decoration: none;
+    border-bottom: solid;
+    border-width: 1px;
+    letter-spacing: 0.01em; 
+    text-decoration: none;   
 }
 
 .header__link_active {
-    border-bottom: solid;
-    border-width: 1px;
-    letter-spacing: 0.01em;
+    border-bottom: none;
 }
 
 .header__logo {
     justify-self: center;
+}
+
+.address {
+    font-style: normal;
 }
 
 .header__address {
@@ -48,17 +52,11 @@
     line-height: 135%;
 }
 
-.tel,
-.mailto {
+.contacts {
     text-decoration: none;
     border-bottom: solid;
     border-width: 1px;
     letter-spacing: 0.01em;
-}
-
-.address__reset {
-    display: block;
-    font-style: normal;
 }
 
 .cover {
@@ -132,12 +130,13 @@
 
 .bet-button {
     background-color: transparent;
+    font-family: Raleway, sans-serif;
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid currentColor;
     width: 256px;
     height: 51px;
 }
@@ -146,7 +145,6 @@
     width: 100%;
     max-width: 1100px;
     height: 100%;
-    min-height: 1017px;
     padding: 179px 24px 146px;
 }
 
@@ -173,7 +171,6 @@
     width: 334px;
     height: 100%;
     min-height: 563px;
-    flex-grow: 1;
 }
 
 .card-link {
@@ -186,8 +183,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 51px 40px 48px;
-    max-height: 563px;
+    padding: 49.5px 40px 48px;
+    position: relative;
+    min-height: 563px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    width: 100%;
 }
 
 .card__title {
@@ -210,41 +213,22 @@
 }
 
 .card_type_film {
-    position: relative;
-    min-height: 563px;
     background-image: url(../images/card-lot-01.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
 }
 
 .card_type_book {
-    position: relative;
-    min-height: 563px;
     background-image: url(../images/card-lot-02.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
 }
 
 .card_type_picture {
-    position: relative;
-    min-height: 563px;
     background-image: url(../images/card-lot-03.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
 }
 
 .lots__look-more-link {
-    display: block;
-    margin-top: 30px;
+    display: inline-block;
+    margin-top: 31px;
     margin-left: 40px;
-    height: 25px;
-    width: 192px;
+    height: 100%;
     font-weight: 400;
     font-size: 20px;
     color: #000;
@@ -254,22 +238,20 @@
 .about {
     display: grid;
     grid-template-columns: 334px 1fr;
-    grid-template-rows: 275px 320px;
     width: 100%;
     max-width: 1100px;
     height: 100%;
-    max-height: 775px;
     padding: 0 24px 180px;
     column-gap: 25px;
 }
 
 .about__column {
     height: 100%;
-    min-height: 595px;
 }
 
 .about__logo {
-    place-self: flex-end center;
+    place-self: flex-start center;
+    margin-top: 35px;
     width: 240px;
     height: 240px;
     background-color: #000;
@@ -298,7 +280,7 @@
     color: #000;
 }
 
-.about-text-first {
+.about-text-paragraph {
     padding-bottom: 24px;
     max-width: 688px;
 }
@@ -311,13 +293,12 @@
     width: 100%;
     max-width: 1100px;
     height: 100%;
-    min-height: 186px;
     font-size: 18px;
     padding: 0px 50px 88px;
 }
 
 .footer__address {
-    padding-right: 37px;
+    justify-self: start;
     line-height: 135%;
 }
 
